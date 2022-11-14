@@ -1,0 +1,28 @@
+{
+  "name": "npm-init-restaurant-picker",
+  "version": "1.0.0",
+  "description": "restaurant-picker-package.json",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 3000\" \"open http://localhost:3000/build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sariusz/restaurant-picker.git"
+  },
+  "author": "Dariusz K.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sariusz/restaurant-picker/issues"
+  },
+  "homepage": "https://github.com/Sariusz/restaurant-picker#readme",
+  "dependencies": {
+    "npm": "^9.1.1",
+    "sass": "^1.56.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "http-server": "^14.1.1"
+  }
+}

@@ -1,0 +1,55 @@
+/**
+ *
+ * Generates Random Restaurant on Button click
+ * Builds object with Restauran data
+ * Prints Random Restaurant info to Dom
+ *
+ */
+
+import { restaurantObj } from "./restaurant-data.js";
+import { getRandomRestaurant } from "./generate-random-restaurant.js";
+import {
+  formBtn,
+  checkboxes,
+  getFilters,
+  requireSelection,
+} from "./filters.js";
+
+/**-----------------------------------------------
+ *
+ * Event listner on form submit
+ * Gets User selected filters
+ * If filters are selected, generates a random restaurant based on user input
+ *
+ */
+
+function submitForm(e) {
+  e.preventDefault();
+  getFilters(checkboxes);
+  let filters = getFilters(checkboxes);
+  if (requireSelection(filters)) {
+    restaurantObj(getRandomRestaurant, filters);
+  }
+  displayTransition();
+}
+//desktop
+formBtn.addEventListener("click", function (e) {
+  submitForm(e);
+});
+//mobile
+formBtn.addEventListener("touchstart", function (e) {
+  submitForm(e);
+});
+
+/**
+ * Restaurant Opacity animation
+ */
+
+function displayTransition() {
+  let restaurantDiv = document.querySelector("#random-restaurant");
+  restaurantDiv.style.opacity = "0";
+  setTimeout(function () {
+    restaurantDiv.style.opacity = "1";
+  }, 200);
+}
+

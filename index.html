@@ -1,0 +1,112 @@
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,0,0" />
+    <script src="./js/index.js" defer type="module"></script>
+    <title>Entscheidungshilfe Mittagsessen</title>
+  </head>
+  <body class="main">
+    <header class="main_heading">
+      <h1 class="main_heading-title">Entscheidungshilfe Mittagsessen</h1>
+    </header>
+    <section class="main_content">
+      <section class="filter-form">
+        <form action="" method="get" id="restaurant-filter_form">
+          <div class="filters">
+            <fieldset class="filters_fieldset Kategorien">
+              <legend>Kategorien:</legend>
+              <div class="filters_fieldset__field">
+                <input class="Kategorien" type="checkbox" id="all" name="All" checked>
+                <label for="All">Alles</label>
+              </div>
+              <div class="filters_fieldset__field">
+                <input class="Kategorien" type="checkbox" id="burger" name="Burger" checked>
+                <label for="Burger">Burger</label>
+              </div>
+              <div class="filters_fieldset__field">
+                <input class="Kategorien" type="checkbox" id="pizza / pasta" name="Pizza / Pasta" checked>
+                <label for="Pizza / Pasta">Pizza / Pasta</label>
+              </div>
+              <div class="filters_fieldset__field">
+                <input class="Kategorien" type="checkbox" id="asiatisch" name="Asiatisch" checked>
+                <label for="Asiatisch">Asiatisch</label>
+              </div>
+              <div class="filters_fieldset__field">
+                <input class="Kategorien" type="checkbox" id="hausmannskost" name="Hausmannskost" checked>
+                <label for="Hausmannskost">Hausmannskost</label>
+              </div>
+              <div class="filters_fieldset__field">
+                <input class="Kategorien" type="checkbox" id="sonstiges" name="Sonstiges" checked>
+                <label for="Sonstiges">Sonstiges</label>
+              </div>
+            </fieldset>
+            <fieldset class="filters_fieldset Entfernung">
+              <legend>Entfernung:</legend>
+              <div class="filters_fieldset__field">
+                <input class="Entfernung" type="checkbox" id="all" name="All"
+                      checked >
+                <label for="All">Egal</label>
+              </div>
+              <div class="filters_fieldset__field">
+                <input class="Entfernung" type="checkbox" id="nicht so weit weg" name="Nicht so weit weg" checked>
+                <label for="Nicht so weit weg">nicht so weit weg</label>
+              </div>
+              <div class="filters_fieldset__field">
+                <input class="Entfernung" type="checkbox" id="ganz nah dran" name="Ganz nah dran" checked>
+                <label for="ganz nah dran">ganz nah dran</label>
+              </div>
+              </fieldset>
+               <fieldset class="filters_fieldset Preis">
+                <legend>Preis:</legend>
+              <div class="filters_fieldset__field">
+                <input class="Preis" type="checkbox" id="egal" name="Egal" checked>
+                <label for="Egal">Egal</label>
+              </div>
+              <div class="filters_fieldset__field">
+                <input class="Preis" type="checkbox" id="nicht zu viel" name="Nicht zu viel" checked>
+                <label for="nicht zu viel">nicht zu viel</label>
+              </div>
+              <div class="filters_fieldset__field">
+                <input class="Preis" type="checkbox" id="ende des Monats" name="Ende des Monats" checked>
+                <label for="Ende des Monats">Ende des Monats</label>
+              </div>
+          </fieldset>
+          <fieldset class="filters_fieldset Veggietauglich">
+                <legend>Veggietaug:</legend>
+               <div class="filters_fieldset__field">
+                <input class="Veggietaug" type="checkbox" id="egal" name="Egal" checked>
+                <label for="Egal">Egal</label>
+              </div>
+              <div class="filters_fieldset__field">
+                <input class="Veggietaug" type="checkbox" id="sollte schon schmecken" name="Sollte schon schmecken" checked>
+                <label for="Sollte schon schmecken">Sollte schon schmecken</label>
+              </div>
+              <div class="filters_fieldset__field">
+                <input class="Veggietaug" type="checkbox" id="muss ganz lecker sein" name="Muss ganz lecker sein" checked>
+                <label for="Muss ganz lecker sein">Muss ganz lecker sein</label>
+              </div>
+          </fieldset>
+        </div>
+        <div class="message-alert"></div>
+        <div class="btn-class">
+        <input class="random-restaurant_btn" type="submit" value="Einreichen">
+      <input class="random-restaurant_btn2" type="submit" value="Zurücksetzen"></input>
+      </div>
+        </form>
+      </section>
+      <section class="random-restaurant-section" id="random-restaurant-generator">
+        <div id="random-restaurant">
+          <h3 id="random-restaurant_name">WO/WAS ESSEN WIR HEUTE?</h3>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
